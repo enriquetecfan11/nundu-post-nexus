@@ -17,8 +17,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Nundu Brand Colors - Burgundy/Wine theme */
+    --primary: 359 48% 35%; /* Rich burgundy */
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 359 48% 45%; /* Lighter burgundy */
+    --primary-glow: 359 65% 55%; /* Glowing burgundy */
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -26,7 +29,7 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 220 14.3% 95.9%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,7 +37,21 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 359 48% 35%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(359 48% 35%) 0%, hsl(359 48% 45%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14.3% 95.9%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(359 65% 55%) 0%, hsl(359 48% 35%) 100%);
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(359 48% 35% / 0.3);
+    --shadow-glow: 0 0 40px hsl(359 65% 55% / 0.4);
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --radius: 0.5rem;
 
@@ -65,8 +82,10 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
+    --primary: 359 65% 55%;
     --primary-foreground: 222.2 47.4% 11.2%;
+    --primary-light: 359 65% 65%;
+    --primary-glow: 359 65% 75%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -82,7 +101,14 @@ All colors MUST be HSL.
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 359 65% 55%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(359 48% 25%) 0%, hsl(359 65% 45%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(222.2 84% 4.9%) 0%, hsl(217.2 32.6% 17.5%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(359 65% 35%) 0%, hsl(359 48% 25%) 100%);
+
+    --shadow-elegant: 0 10px 30px -10px hsl(359 65% 55% / 0.4);
+    --shadow-glow: 0 0 40px hsl(359 65% 55% / 0.6);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -101,5 +127,34 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from { box-shadow: 0 0 20px hsl(359 65% 55% / 0.4); }
+    to { box-shadow: 0 0 40px hsl(359 65% 55% / 0.8); }
   }
 }
