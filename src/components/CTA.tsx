@@ -11,16 +11,16 @@ const CTA = () => {
         <div className="max-w-4xl mx-auto text-center text-white space-y-8">
           {/* Main Heading */}
           <h2 className="text-4xl lg:text-6xl font-bold leading-tight">
-            ¿Listo para revolucionar tu
+            Crea contenido profesional
             <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-              estrategia digital?
+              con IA en minutos
             </span>
           </h2>
 
           {/* Subheading */}
           <p className="text-xl lg:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto">
-            Únete a miles de profesionales que ya automatizaron su éxito en redes sociales. 
-            Comienza tu transformación digital hoy mismo.
+            Registrate gratis, accede al panel de control y comienza a generar publicaciones automáticamente. 
+            <strong>Sin tarjeta de crédito requerida.</strong>
           </p>
 
           {/* Benefits */}

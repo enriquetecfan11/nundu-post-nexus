@@ -1,42 +1,42 @@
-import { Calendar, BarChart3, Zap, Shield, Users, Smartphone } from "lucide-react";
+import { UserPlus, Layout, Sparkles, Table, Calendar, BarChart3 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const features = [
   {
-    icon: Calendar,
-    title: "Programación Inteligente",
-    description: "Programa tus posts en el momento perfecto con IA que aprende de tu audiencia.",
+    icon: UserPlus,
+    title: "Registro Fácil y Seguro",
+    description: "Crea tu cuenta en segundos y accede inmediatamente a todas las funcionalidades de la plataforma.",
     color: "text-blue-500"
   },
   {
-    icon: BarChart3,
-    title: "Analytics Avanzados",
-    description: "Métricas detalladas y insights accionables para mejorar tu estrategia de contenido.",
+    icon: Layout,
+    title: "Panel de Control Intuitivo",
+    description: "Dashboard completo con formularios simples para crear y gestionar tus publicaciones de forma eficiente.",
     color: "text-green-500"
   },
   {
-    icon: Zap,
-    title: "Automatización Total",
-    description: "Automatiza respuestas, hashtags y reposteo para maximizar tu alcance orgánico.",
-    color: "text-yellow-500"
-  },
-  {
-    icon: Shield,
-    title: "Seguridad Garantizada",
-    description: "Conexiones seguras y encriptadas. Tus datos están protegidos con estándares bancarios.",
+    icon: Sparkles,
+    title: "Generación de Texto con IA",
+    description: "Crea contenido atractivo automáticamente. Nuestra IA genera textos optimizados para cada red social.",
     color: "text-purple-500"
   },
   {
-    icon: Users,
-    title: "Gestión de Equipos",
-    description: "Colabora con tu equipo, asigna roles y aprueba contenido antes de publicar.",
-    color: "text-pink-500"
+    icon: Table,
+    title: "Gestión Centralizada",
+    description: "Tabla interactiva que te permite ver, editar y organizar todo tu contenido desde un solo lugar.",
+    color: "text-orange-500"
   },
   {
-    icon: Smartphone,
-    title: "Multiplataforma",
-    description: "Gestiona Facebook, Instagram, Twitter, LinkedIn y TikTok desde una sola plataforma.",
+    icon: Calendar,
+    title: "Programación Inteligente",
+    description: "Programa tus publicaciones para el momento óptimo y mantén tu presencia digital activa 24/7.",
     color: "text-indigo-500"
+  },
+  {
+    icon: BarChart3,
+    title: "Seguimiento y Análisis",
+    description: "Monitorea el rendimiento de tus posts y optimiza tu estrategia con datos en tiempo real.",
+    color: "text-pink-500"
   }
 ];
 
@@ -47,10 +47,10 @@ const Features = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-            Características Poderosas
+            Funcionalidades Principales
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Todo lo que necesitas para dominar las redes sociales y hacer crecer tu marca de manera inteligente y eficiente.
+            Una plataforma completa que combina simplicidad, inteligencia artificial y gestión centralizada para potenciar tu presencia digital.
           </p>
         </div>
 
@@ -81,8 +81,8 @@ const Features = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <div className="inline-flex items-center gap-2 text-primary font-medium">
-            <Zap className="w-5 h-5" />
-            <span>Y muchas funciones más en desarrollo</span>
+            <Sparkles className="w-5 h-5" />
+            <span>Potenciado por Inteligencia Artificial para máximo rendimiento</span>
           </div>
         </div>
       </div>

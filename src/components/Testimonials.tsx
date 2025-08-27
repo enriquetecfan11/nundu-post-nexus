@@ -7,23 +7,23 @@ const testimonials = [
     name: "María González",
     role: "Community Manager",
     company: "TechStartup",
-    content: "Desde que uso el Gestor de Contenido, mi productividad aumentó 300%. La programación automática es increíble y los analytics me ayudan a tomar mejores decisiones.",
+    content: "La IA para generar contenido es impresionante. En minutos tengo publicaciones profesionales listas. El panel es súper fácil de usar y la tabla centralizada me permite tener todo organizado.",
     rating: 5,
     initials: "MG"
   },
   {
     name: "Carlos Rodríguez",
-    role: "Director de Marketing",
+    role: "Emprendedor Digital",
     company: "E-commerce Plus",
-    content: "Perfecto para equipos. La colaboración es fluida y la calidad del contenido mejoró notablemente. ROI comprobado en los primeros 3 meses.",
+    content: "Empecé con el plan gratuito y a los pocos días me suscribí al premium. La calidad del contenido generado automáticamente superó mis expectativas. Vale cada euro.",
     rating: 5,
     initials: "CR"
   },
   {
     name: "Ana Martín",
-    role: "Influencer",
-    company: "Lifestyle Blog",
-    content: "Como creadora de contenido, necesito eficiencia. Esta herramienta me ahorra 15 horas semanales y mis seguidores crecen constantemente.",
+    role: "Freelancer",
+    company: "Marketing Digital",
+    content: "Como freelancer, el tiempo es oro. Esta plataforma me permite crear contenido para varios clientes de forma rápida y profesional. La función de programación es perfecta.",
     rating: 5,
     initials: "AM"
   }
@@ -95,20 +95,20 @@ const Testimonials = () => {
         <div className="mt-16 text-center">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
             <div>
-              <div className="text-3xl font-bold text-primary">4.9/5</div>
-              <div className="text-sm text-muted-foreground">Rating promedio</div>
+              <div className="text-3xl font-bold text-primary">IA</div>
+              <div className="text-sm text-muted-foreground">Generación automática</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary">10K+</div>
+              <div className="text-3xl font-bold text-primary">500+</div>
               <div className="text-sm text-muted-foreground">Usuarios activos</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary">1M+</div>
-              <div className="text-sm text-muted-foreground">Posts publicados</div>
+              <div className="text-3xl font-bold text-primary">15K+</div>
+              <div className="text-sm text-muted-foreground">Posts creados</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary">99.9%</div>
-              <div className="text-sm text-muted-foreground">Uptime</div>
+              <div className="text-3xl font-bold text-primary">5€</div>
+              <div className="text-sm text-muted-foreground">Precio justo</div>
             </div>
           </div>
         </div>

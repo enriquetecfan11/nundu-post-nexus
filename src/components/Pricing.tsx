@@ -5,15 +5,16 @@ import { Badge } from "@/components/ui/badge";
 
 const plans = [
   {
-    name: "Starter",
-    price: "€19",
-    period: "/mes",
-    description: "Perfecto para emprendedores y pequeños negocios",
+    name: "Plan Gratuito",
+    price: "€0",
+    period: "/siempre",
+    description: "Perfecto para probar la plataforma y crear tus primeras publicaciones",
     features: [
-      "Hasta 3 cuentas de redes sociales",
-      "50 posts programados por mes",
-      "Analytics básicos",
-      "Plantillas prediseñadas",
+      "Hasta 10 posts por mes",
+      "Generación de contenido con IA",
+      "Panel de control completo",
+      "Gestión centralizada en tabla",
+      "Programación básica",
       "Soporte por email"
     ],
     buttonText: "Comenzar gratis",
@@ -21,38 +22,22 @@ const plans = [
     popular: false
   },
   {
-    name: "Professional", 
-    price: "€49",
+    name: "Plan Premium", 
+    price: "€5",
     period: "/mes",
-    description: "Ideal para agencias y equipos de marketing",
+    description: "Ideal para creadores de contenido y pequeñas empresas",
     features: [
-      "Hasta 15 cuentas de redes sociales",
-      "Posts ilimitados",
-      "Analytics avanzados + reportes",
-      "Gestión de equipos (5 miembros)",
-      "IA para optimización de contenido",
-      "Soporte prioritario 24/7"
+      "Hasta 30 posts por mes",
+      "Generación ilimitada con IA",
+      "Programación avanzada",
+      "Analytics detallados",
+      "Plantillas premium",
+      "Soporte prioritario",
+      "Exportación de datos"
     ],
-    buttonText: "Prueba 14 días gratis",
+    buttonText: "Suscribirse ahora",
     buttonVariant: "hero" as const,
     popular: true
-  },
-  {
-    name: "Enterprise",
-    price: "€99",
-    period: "/mes", 
-    description: "Para grandes empresas con necesidades avanzadas",
-    features: [
-      "Cuentas ilimitadas",
-      "Todo lo de Professional",
-      "API personalizada",
-      "Equipos ilimitados",
-      "Onboarding personalizado",
-      "Account manager dedicado"
-    ],
-    buttonText: "Contactar ventas",
-    buttonVariant: "glow" as const,
-    popular: false
   }
 ];
 
@@ -63,15 +48,15 @@ const Pricing = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-            Planes que se adaptan a tu crecimiento
+            Precios Simples y Transparentes
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Comienza gratis y escala según tus necesidades. Sin compromisos, cancela cuando quieras.
+            Comienza gratis con 10 posts. Cuando necesites más, únete al plan premium por solo 5€/mes.
           </p>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto justify-center">
           {plans.map((plan, index) => (
             <Card 
               key={index}
@@ -140,25 +125,32 @@ const Pricing = () => {
         </div>
 
         {/* Bottom Info */}
-        <div className="text-center mt-12 space-y-4">
-          <p className="text-muted-foreground">
-            ¿Necesitas algo diferente? <a href="#contact" className="text-primary hover:underline font-medium">Contacta con nosotros</a>
-          </p>
-          
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-green-500" />
-              <span>Soporte en español</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-green-500" />
-              <span>Datos seguros en Europa</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-green-500" />
-              <span>99.9% de uptime garantizado</span>
+        <div className="text-center mt-12 space-y-6">
+          <div className="bg-gradient-to-r from-primary/10 to-primary-light/10 rounded-2xl p-6 max-w-2xl mx-auto">
+            <h3 className="font-semibold text-lg mb-3 text-primary">¿Por qué elegir nuestro Gestor de Contenido?</h3>
+            <div className="grid md:grid-cols-2 gap-4 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-green-500" />
+                <span>IA generativa integrada</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-green-500" />
+                <span>Interfaz súper intuitiva</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-green-500" />
+                <span>Precios accesibles</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-green-500" />
+                <span>Soporte en español</span>
+              </div>
             </div>
           </div>
+          
+          <p className="text-muted-foreground">
+            <strong>Sin permanencia</strong> • Cancela cuando quieras • <strong>Prueba gratis ahora</strong>
+          </p>
         </div>
       </div>
     </section>

@@ -29,20 +29,20 @@ const Hero = () => {
               </h1>
               
               <p className="text-xl lg:text-2xl text-white/90 leading-relaxed max-w-lg">
-                Automatiza, programa y optimiza tus publicaciones en redes sociales. 
-                Haz crecer tu marca con herramientas inteligentes.
+                Crea publicaciones automáticamente con IA, gestiona todo desde un panel intuitivo 
+                y programa tu contenido. <strong>¡Comienza gratis!</strong>
               </p>
             </div>
 
             {/* Stats */}
             <div className="flex flex-wrap gap-6 text-white/90">
               <div className="flex items-center gap-2">
-                <Users className="w-5 h-5 text-yellow-300" />
-                <span className="text-sm">+10K usuarios activos</span>
+                <Sparkles className="w-5 h-5 text-yellow-300" />
+                <span className="text-sm">Generación automática con IA</span>
               </div>
               <div className="flex items-center gap-2">
                 <TrendingUp className="w-5 h-5 text-yellow-300" />
-                <span className="text-sm">300% más engagement</span>
+                <span className="text-sm">Gestión centralizada</span>
               </div>
             </div>
 
